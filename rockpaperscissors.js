@@ -50,17 +50,35 @@ const determineWinner = (userChoice, computerChoice) => {
       return 'User Victory!';
     } 
   }
-}
+
+  if(userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return 'Computer Victory!';
+    } else return 'User Victory!';
+    }
+  }
 
 
-const playGame = () => {
-  const userChoice = getUserChoice('bomb');  // Or 'rock'/'paper'/'scissors'
+
+function playGame(userInput){
+  const userChoice = getUserChoice(userInput);
   const computerChoice = getComputerChoice();
-  
-  console.log('You threw: ' + userChoice);
-  console.log('The computer threw: ' + computerChoice);
-  console.log(determineWinner(userChoice, computerChoice));
+
+  document.getElementById('user').textContent = `You: ${userChoice}`;
+  document.getElementById('computer').textContent = `Computer: ${computerChoice}`;
+
+  const result = determineWinner(userChoice, computerChoice);
+  const resultE1 = document.getElementById('result');
+  resultE1.textContent = result;
 }
-playGame();
+
+if (result === 'BOOM! User destroyed computer!') {
+  resultE1.classList.add('bomb-result');
+} else {
+  resultE1.classList.remove('bomb-result');
+}
+
+
+
 
 

@@ -1,0 +1,52 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src='rockpaperscissors.js'></script>
+      <link rel="stylesheet" href="styles.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Michroma&family=Mr+Bedfort&family=Pixelify+Sans:wght@400..700&family=Sixtyfour&display=swap" rel="stylesheet">
+      <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <header class="instructions">
+        <h1 class="rps">Rock, Paper, Scissors</h1>
+        <h3 class="challenge">See if you can win!!</h3>
+            <p class="howto">Choose Rock, paper, or scissors from the buttons below. See if you can beat the computer!
+            P.s. On this page there is a secret option, find it. Good luck!
+            </p>
+    </header>
+    
+    <main id="game">
+        <section id='choices'>
+            <p id="user">You: </p>
+            <p id="computer">Computer: </p>
+        </section>
+
+        <section id='result'>
+            Click Your choice to play
+        </section>
+
+        <div class="button-container">
+            <button class="rok" onclick="playGame('rock')">Rock 🪨</button>
+            <button class='pap' onclick="playGame('paper')">Paper📄</button>
+            <button class='scis' onclick="playGame('scissors')">Scissors✂️</button>
+        </div>
+
+        <article id="bomb-box">
+            <button id="bomb" onclick="playGame('bomb')" title="💥Cheat found💥!!">
+                💥**BOMB**💥
+            </button>
+        </article>
+
+
+
+
+
+    </main>
+
+  </body>
+  </html>
+

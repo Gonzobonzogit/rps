@@ -1,0 +1,118 @@
+body {
+    background-image: url(/images/rock-paper-scissors-icon-src.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+.rps{
+    display:flex;
+    justify-content: center;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.challenge{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.howto{
+    display: flex;
+    justify-content: center;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+    font-size: 25px; 
+
+}
+
+#result{
+    display:flex;
+    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 35px;
+    color: red; 
+
+}
+
+.button-container{
+    display:flex;
+    justify-content:space-between;
+    border-radius: 75 0 75 0
+}
+
+.rok {
+  position: relative;
+  left: 160px;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 100px 0 100px 0;
+}
+
+.pap{
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 100px 0 100px 0;
+}
+
+.scis {
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 100px 0 100px 0;
+  position: relative;
+  right: 170px;
+}
+
+
+#bomb-box{
+   display:inline-block;
+   position:fixed;
+   bottom:20px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+#bomb{
+    opacity: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 11px;
+    color: red; 
+}
+
+#bomb-box:hover #bomb{
+opacity:1;
+}
+
+#result.bomb-result{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 11px;
+    color: red; 
+}
+}
